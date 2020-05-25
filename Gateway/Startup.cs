@@ -22,6 +22,7 @@ namespace Gateway
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddOcelot(_configuration);
+            services.AddSwaggerForOcelot(_configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -32,6 +33,8 @@ namespace Gateway
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseSwaggerForOcelotUI(_configuration);
+            
             app.UseHttpsRedirection();
 
             app.UseRouting();

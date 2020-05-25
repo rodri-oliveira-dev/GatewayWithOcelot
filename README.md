@@ -1,6 +1,6 @@
 What is the Project?
 =====================
-The objective of this project was to implement [Ocelot Gateway](https://github.com/ThreeMammals/Ocelot/blob/master/README.md) 
+The objective of this project was to implement [Ocelot Gateway](https://github.com/ThreeMammals/Ocelot) 
 
 ## Give a Star! :star:
 If you liked the project or if project helped you, please give a star ;)
@@ -18,3 +18,5 @@ To know more about how to setup your enviroment visit the [Microsoft .NET Downlo
 
 - .NET Core 3.1
 - Ocelot
+- Swagger
+- Swagger For Ocelot

@@ -10,7 +10,13 @@
         }
       ],
       "UpstreamPathTemplate": "/api1/{everything}",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+      "SwaggerKey": "clientes",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post",
+        "Put",
+        "Delete"
+      ]
     },
     {
       "DownstreamPathTemplate": "/{everything}",
@@ -22,10 +28,38 @@
         }
       ],
       "UpstreamPathTemplate": "/api2/{everything}",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]  
+      "SwaggerKey": "pedidos",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post",
+        "Put",
+        "Delete"
+      ]
     }
   ],
-
+  "SwaggerEndPoints": [
+    {
+      "Key": "clientes",
+      "Config": [
+        {
+          "Name": "Primeira API",
+          "Version": "v1",
+          "Url": "https://localhost:44397/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "pedidos",
+      "Config": [
+        {
+          "Name": "Segunda API",
+          "Version": "v1",
+          "Url": "https://localhost:44387/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ],
   "GlobalConfiguration": {
+    "BaseUrl": "http://localhost"
   }
 }

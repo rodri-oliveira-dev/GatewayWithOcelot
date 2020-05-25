@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "Cliente",
+      "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -20,7 +20,7 @@
     "PrimeiraApi": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "Cliente",
+      "launchUrl": "swagger",
       "applicationUrl": "https://localhost:44397;http://localhost:44390",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

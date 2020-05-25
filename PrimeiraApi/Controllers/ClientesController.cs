@@ -8,10 +8,10 @@ namespace PrimeiraApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ClienteController : ControllerBase
+    public class ClientesController : ControllerBase
     {
-        private readonly ILogger<ClienteController> _logger;
-        public ClienteController(ILogger<ClienteController> logger)
+        private readonly ILogger<ClientesController> _logger;
+        public ClientesController(ILogger<ClientesController> logger)
         {
             _logger = logger;
         }
