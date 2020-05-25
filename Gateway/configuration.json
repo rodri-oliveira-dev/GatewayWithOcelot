@@ -1,3 +1,65 @@
 {
-  
-}
+    "ReRoutes": [
+      {
+        "DownstreamPathTemplate": "/{everything}",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 44397
+          }
+        ],
+        "UpstreamPathTemplate": "/api1/{everything}",
+        "SwaggerKey": "clientes",
+        "UpstreamHttpMethod": [
+          "Get",
+          "Post",
+          "Put",
+          "Delete"
+        ]
+      },
+      {
+        "DownstreamPathTemplate": "/{everything}",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 44387
+          }
+        ],
+        "UpstreamPathTemplate": "/api2/{everything}",
+        "SwaggerKey": "pedidos",
+        "UpstreamHttpMethod": [
+          "Get",
+          "Post",
+          "Put",
+          "Delete"
+        ]
+      }
+    ],
+    "SwaggerEndPoints": [
+      {
+        "Key": "clientes",
+        "Config": [
+          {
+            "Name": "Primeira API",
+            "Version": "v1",
+            "Url": "https://localhost:44397/swagger/v1/swagger.json"
+          }
+        ]
+      },
+      {
+        "Key": "pedidos",
+        "Config": [
+          {
+            "Name": "Segunda API",
+            "Version": "v1",
+            "Url": "https://localhost:44387/swagger/v1/swagger.json"
+          }
+        ]
+      }
+    ],
+    "GlobalConfiguration": {
+      "BaseUrl": "http://localhost"
+    }
+  }

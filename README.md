@@ -14,6 +14,14 @@ Also you can run the Project in Visual Studio Code (Windows, Linux or MacOS).
 
 To know more about how to setup your enviroment visit the [Microsoft .NET Download Guide](https://www.microsoft.com/net/download)
 
+## To Test the project
+
+1. Enter the [PrimeiraApi] directory and run the [dotnet run] command;
+2. Enter the [SegundaApi] directory and run the [dotnet run] command;
+3. Enter the [Gateway] directory and run the [dotnet run] command;
+4. Check that the url and ports are the same as configured in the Gateway\configuration.json file;
+5. Browse to the Gateway swagger url;
+
 ## Technologies implemented:
 
 - .NET Core 3.1
