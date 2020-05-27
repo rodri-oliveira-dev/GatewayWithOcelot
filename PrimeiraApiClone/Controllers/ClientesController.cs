@@ -20,16 +20,16 @@ namespace PrimeiraApi.Controllers
         public IEnumerable<Cliente> Get()
         {
             return Enumerable.Range(1, 5).Select(index => new Cliente()
-            {
-                Id = index,
-                Nome = $"Cliente - {index}"
-            }).ToArray();
+                {
+                    Id =  index,
+                    Nome = $"Cliente - {index}"
+                }).ToArray();
         }
 
         [HttpGet("live")]
         public string GetStatic()
         {
-            return "From APIServiceA";
-        }
+            return "From APIServiceB";
+        }        
     }
 }
